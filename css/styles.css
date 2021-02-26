@@ -1,0 +1,17 @@
+html, body, .container, #sidebar, #mapContainer {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+#sidebar {
+  background: gray;
+  width: 320px;
+}
+
+#mapContainer {
+  flex-grow: 1;
+}

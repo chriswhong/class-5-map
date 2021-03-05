@@ -10,8 +10,21 @@ html, body, .container, #sidebar, #mapContainer {
 #sidebar {
   background: gray;
   width: 320px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 #mapContainer {
   flex-grow: 1;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.flyButton {
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 600;
 }

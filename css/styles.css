@@ -19,11 +19,21 @@ html, body, .container, #sidebar, #mapContainer {
   flex-grow: 1;
 }
 
+.title {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
 .description {
   margin-bottom: 20px;
 }
 
-.flyButton {
+.button-container {
+  margin-bottom: 20px;
+}
+
+.fly-button {
   padding: 10px;
   cursor: pointer;
   font-weight: 600;

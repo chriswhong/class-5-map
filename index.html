@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>My First MapboGL Map</title>
+  <title>More MapboxGL Examples</title>
   <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
   <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css" type="text/css">
   <link rel="stylesheet" href="css/styles.css?v=1.0">
@@ -13,19 +13,22 @@
 <body>
   <div class='container'>
     <div id='sidebar'>
+      <div class='title'>MapboxGL Choropleth & Interactivity Example</div>
       <div class='description'>Click a button to fly to a community district of interest</div>
-      <button class='flyButton' data-cd="bk-6">Brooklyn 6</button>
-      <button class='flyButton' data-cd="mn-6">Manhattan 1</button>
-      <button class='flyButton' data-cd="bx-2">Bronx 2</button>
-      <br/>
-      <br/>
-      <button class='flyButton' data-cd="reset">Reset</button>
-
-      <div class='cdname'>
-        Click a district for more information
+      <div class='button-container'>
+        <button class='fly-button' data-cd="306">Brooklyn 6</button>
+        <button class='fly-button' data-cd="101">Manhattan 1</button>
+        <button class='fly-button' data-cd="202">Bronx 2</button>
+        <br/>
+        <br/>
+        <button class='fly-button reset-button' data-cd="reset" disabled>Reset</button>
       </div>
-      <div class='population'>
-        You will see the population
+      <div class='info-container'>
+        <div class='cdname'>
+          Click a district for more information
+        </div>
+        <div class='population'>
+        </div>
       </div>
     </div>
     <div id='mapContainer'>MAP</div>
